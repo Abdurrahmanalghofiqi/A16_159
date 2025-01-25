@@ -31,6 +31,12 @@ class TugasContainer : AppContainer {
     override val kategoriRepository : KategoriRepository by lazy {
         NetworkKategoriRepository (kategoriService)
     }
+    private val asetService: AsetService by lazy {
+        retrofit.create(AsetService::class.java)
+    }
 
+    override val asetRepository: AsetRepository by lazy {
+        NetworkAsetRepository (asetService)
+    }
 
 }
