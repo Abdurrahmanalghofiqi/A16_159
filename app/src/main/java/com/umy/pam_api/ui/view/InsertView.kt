@@ -35,7 +35,7 @@ object DestinasiEntry: DestinasiNavigasi {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun EntryAsetScreen(
+fun EntryKategoriScreen(
     navigateBack:()->Unit,
     modifier: Modifier = Modifier,
     viewModel: InsertViewModel = viewModel(factory = PenyediaViewModel.Factory)
