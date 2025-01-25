@@ -35,7 +35,26 @@ object PenyediaViewModel{
                 createSavedStateHandle(),
                 MahasiswaApplication().container.kategoriRepository)
         }
-
+        initializer {
+            AsetViewModel(
+                createSavedStateHandle(),
+                MahasiswaApplication().container.asetRepository)
+        }
+        initializer {
+            AsetDetailVM(
+                createSavedStateHandle(),
+                MahasiswaApplication().container.asetRepository)
+        }
+        initializer {
+            AsetInsertVM(
+                createSavedStateHandle(),
+                MahasiswaApplication().container.asetRepository)
+        }
+        initializer {
+            AsetUpdateVM(
+                createSavedStateHandle(),
+                MahasiswaApplication().container.asetRepository)
+        }
 
     }
 }
