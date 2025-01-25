@@ -21,6 +21,20 @@ object PenyediaViewModel{
             HomeViewModel(
                 MahasiswaApplication().container.kategoriRepository)
         }
+        initializer {
+            InsertViewModel(
+                MahasiswaApplication().container.kategoriRepository)
+        }
+        initializer {
+            DetailViewModel(
+                createSavedStateHandle(),
+                MahasiswaApplication().container.kategoriRepository)
+        }
+        initializer {
+            UpdateViewModel(
+                createSavedStateHandle(),
+                MahasiswaApplication().container.kategoriRepository)
+        }
 
 
     }
